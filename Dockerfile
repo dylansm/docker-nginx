@@ -18,6 +18,6 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 VOLUME ["/var/cache/nginx", "/usr/share/nginx/html"]
 
 RUN chown -Rf www-data.www-data /usr/share/nginx/html/
-EXPOSE 80 443
+EXPOSE 80 443 25
 
 CMD ["nginx", "-g", "daemon off;"]
